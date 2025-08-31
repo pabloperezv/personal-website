@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import website from "../../Assets/Projects/website.png";
+import jobsnewsletter from "../../Assets/Projects/jobsnewsletter.png";
+import scrapersx3 from "../../Assets/Projects/scrapersx3.png";
+import s3migration from "../../Assets/Projects/s3migration.png";
+import storeclustering from "../../Assets/Projects/storeclustering.png";
+import vrp from "../../Assets/Projects/vrp.png";
 
 function Projects() {
   return (
@@ -23,71 +23,71 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={s3migration}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="S3 to Snowflake migration"
+              description="Migrated large and heterogeneous datasets from AWS S3 to Snowflake. Handling JSON, Parquet, CSV, Shapefiles and adding per-file retry logic for failures. Also simplified shapefiles to comply with Snowflake GEOGRAPHY size constraints (64 MB)."
+              // demoLink="https://.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={jobsnewsletter}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Jobs Newsletter"
+              description="Built a LinkedIn job scraper that collects all data-related postings from the last 24 hours, filters for relevance, and emails the top picks to me. Deployed on AWS EC2 with a daily cron so it runs even when my PC is off."
+              ghLink="https://github.com/pabloperezv/jobs-newsletter"
+              // demoLink="https://.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={vrp}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Vehicle Routing Problem"
+              description="Optimized large-scale and complex Capacitated Vehicle Routing Problem with Time Windows (CVRPTW) to plan routes for hundreds of sales representatives in 20+ countries achieving multimillion-dollar cost savings and significant CO₂ emission cuts."
+              // demoLink="https://.com/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={scrapersx3}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Multiple Scrapers"
+              description="I build scrapers the way some people collect sneakers. My bots have visited more places than I have: Google Maps, Gaode Maps, Glassdoor, Linkedin, and beyond. Tech stack used: Scrapy, Selenium and Zyte."
+              ghLink="https://github.com/pabloperezv/glassdoor-scraper"
+              // demoLink="https://.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={storeclustering}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Stores Clustering"
+              description="Built ML models to score each store’s sales potential and fed them into territory planning. For this we need to balance workloads, visit frequencies, take into account salesmen personal constraints and cut travel time. I used Gurobi for the optimization part and k-means constrained for the clustering."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={website}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Personal Website"
+              description="Even though I'm a data scientist I also wanted to know what it feels like to be a frontend developer that's why I decided to challenge myself and see if I could actually ship a real site. I ended up using HTML, CSS, JavaScript, and React. The result is the current page you are visiting :)"
+              ghLink="https://github.com/pabloperezv/personal-website"
             />
           </Col>
         </Row>
+        <small
+          className="text-muted d-block text-center mt-4"
+          style={{ opacity: 0.85 }}
+        >
+          Note: Not all projects have GitHub links, many are enterprise/private.
+        </small>
       </Container>
     </Container>
   );
