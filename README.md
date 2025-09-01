@@ -3,7 +3,7 @@
   <a href="https://pabloperezverdugo.vercel.app/" target="_blank">pabloperezverdugo.com</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img.png" />
+  <img alt="Demo" src="./src/Assets/Images/readme-img.png" />
 </div>
 
 <br/>
@@ -40,7 +40,7 @@ This project was built using these technologies.
 
 
 
-## 🛠 Installation and Setup Instructions
+## 🛠 Setup Instructions
 
 1. You will need `node.js` and `git` installed globally on your machine.
 
