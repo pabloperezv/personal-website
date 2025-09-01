@@ -57,7 +57,7 @@ function Projects() {
               imgPath={scrapersx3}
               isBlog={false}
               title="Multiple Scrapers"
-              description="I build scrapers the way some people collect sneakers. My bots have visited more places than I have: Google Maps, Gaode Maps, Glassdoor, Linkedin, and beyond. Tech stack used: Scrapy, Selenium and Zyte."
+              description="I build scrapers the way some people collect sneakers. My bots have visited more places than I have: Google Maps, Gaode Maps, Glassdoor, Linkedin, and beyond."
               ghLink="https://github.com/pabloperezv/glassdoor-scraper"
               // demoLink="https://.com/"
             />

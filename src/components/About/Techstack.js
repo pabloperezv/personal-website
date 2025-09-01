@@ -23,12 +23,12 @@ import { FaAws } from "react-icons/fa";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 
-import { ReactComponent as CustomLogo } from "../../Assets/selenium-seeklogo.svg";
-import { ReactComponent as CustomLogo1 } from "../../Assets/scrapylogo.svg";
-import { ReactComponent as CustomLogo2 } from "../../Assets/zytelogo.svg";
-import { ReactComponent as CustomLogo3 } from "../../Assets/GurobiLogo.svg";
-import { ReactComponent as CustomLogo4 } from "../../Assets/amazon-s3-logo.svg";
-import { ReactComponent as CustomLogo5 } from "../../Assets/r-lang.svg";
+import { ReactComponent as CustomLogo } from "../../Assets/Logos/selenium-seeklogo.svg";
+import { ReactComponent as CustomLogo1 } from "../../Assets/Logos/scrapylogo.svg";
+import { ReactComponent as CustomLogo2 } from "../../Assets/Logos/zytelogo.svg";
+import { ReactComponent as CustomLogo3 } from "../../Assets/Logos/GurobiLogo.svg";
+import { ReactComponent as CustomLogo4 } from "../../Assets/Logos/amazon-s3-logo.svg";
+import { ReactComponent as CustomLogo5 } from "../../Assets/Logos/r-lang.svg";
 
 function Techstack() {
   return (

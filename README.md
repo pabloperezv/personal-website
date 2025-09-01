@@ -37,3 +37,17 @@ This project was built using these technologies.
     <a href="https://github.com/pabloperezv/personal-website/issues">Report Bug</a>
 
 </h3>
+
+
+
+## 🛠 Installation and Setup Instructions
+
+1. You will need `node.js` and `git` installed globally on your machine.
+
+2. Installation: `npm install`
+
+3. In the project directory, you can run: `npm start`
+
+This runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.

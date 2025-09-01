@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Pablo Perez </span>
             from <span className="purple"> Cádiz, Spain.</span>
             <br />
-            I am currently employed as a Data Scientist at Deloitte.
+            I am currently employed as a <span className="purple"> Data Scientist</span> at Deloitte.
             <br />
             I hold a bachelor's degree in <span className="purple"> Aerospace Engineering</span> at the University of Seville and a master's degree * in
              <span className="purple"> Data Science</span> at Universitat Oberta de Catalunya (UOC).
