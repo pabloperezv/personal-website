@@ -6,6 +6,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { ImPointRight } from "react-icons/im";
 
 function Home2() {
   return (
@@ -16,34 +17,38 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-              I fell in love with programming and never quite recovered... <br />
-              <br />I am fluent in languages like
-              <i>
-                <b className="purple"> Python, R and SQL. </b>
-              </i>
+            <p className="home-about-body" style={{ textAlign: "justify" }}>
+              Hi Everyone, I am <span className="purple">Pablo Perez </span>
+              from <span className="purple"> Cádiz, Spain.</span>
+              <br />
+              I am currently employed as a <span className="purple"> Data Scientist</span> at Deloitte.
+              <br />
+              I hold a bachelor's degree in <span className="purple"> Aerospace Engineering</span> at the University of Seville and a master's degree * in
+               <span className="purple"> Data Science</span> at Universitat Oberta de Catalunya (UOC).
+              <br />
+              <span style={{ fontSize: "12px", fontStyle: "italic" }}>
+                * I still need to complete my final master's thesis.
+              </span>
               <br />
               <br />
-              I’m a never-ending learner with a journey that started in &nbsp;
-              <i>
-                <b className="purple">Aerospace Engineering </b>
-              </i>
-              and evolved into my current role as a 
-              <i>
-                <b className="purple"> Data Scientist. </b>
-              </i>
-              Looking ahead, I aspire to become a 
-              <i>
-                <b className="purple"> full-stack data professional, </b>
-              </i>
-              bridging engineering, analytics, and business impact.
-              <br />
-              <br />
-              What excites me most is the opportunity to learn continuously, tackle impactful projects, and transform innovative concepts into 
-              <i>
-                <b className="purple"> reality.</b>
-              </i>
+              Apart from coding, some other activities that I love to do!
             </p>
+            <ul>
+              <li className="about-activity">
+                <ImPointRight /> Lift weights
+              </li>
+              <li className="about-activity">
+                <ImPointRight /> Sea diving
+              </li>
+              <li className="about-activity">
+                <ImPointRight /> Watch anime
+              </li>
+            </ul>
+            <i>
+              <p style={{ color: "rgb(155 126 172)", fontSize: "19px" }}>
+                "Programming isn't about what you know; it's about what you can figure out!"{" "}
+              </p>
+            </i>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

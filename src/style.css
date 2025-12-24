@@ -257,9 +257,6 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/Images/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -578,6 +575,135 @@ button:focus {
 }
 
 /* --------- */
+/* Flip Card for Toolstack */
+/* --------- */
+.flip-card-container {
+  perspective: 1000px;
+  margin: 15px !important;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform-origin: center center;
+  margin: 0 auto;
+}
+
+.flip-card-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front.tech-icons,
+.flip-card-back.tech-icons {
+  width: 100%;
+  height: 150px;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5em !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border-radius: 5px !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-back.tech-icons .tool-name {
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flip-card-back.tech-icons:hover {
+  transform: rotateY(180deg) !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+}
+
+.tool-name {
+  font-size: clamp(0.4em, 0.9vw, 0.7em);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  word-break: normal;
+  overflow-wrap: normal;
+  overflow: visible;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.3;
+  box-sizing: border-box;
+  hyphens: none;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 0;
+}
+
+@media (max-width: 767px) {
+  .flip-card-container {
+    margin: 10px !important;
+    height: 120px;
+  }
+  
+  .flip-card,
+  .flip-card-front,
+  .flip-card-back,
+  .flip-card-front.tech-icons,
+  .flip-card-back.tech-icons {
+    height: 120px;
+  }
+  
+  .tool-name {
+    font-size: clamp(0.45em, 1.5vw, 0.65em);
+    -webkit-line-clamp: 2;
+    padding: 5px;
+  }
+}
+
+/* --------- */
 /* Companies */
 /* --------- */
 
@@ -603,6 +729,138 @@ button:focus {
   transform: scale(1.2) !important;
   overflow: hidden !important;
 }
+
+/* --------- */
+/* Certifications */
+/* --------- */
+
+.certifications-static-container {
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certifications-viewport {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0;
+}
+
+.certifications-scroll-static {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.certification-badge {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  width: calc((100% - 150px) / 6);
+  min-width: 120px;
+  max-width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.certification-badge:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.certification-image {
+  height: 120px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.certification-image:hover {
+  filter: drop-shadow(0 6px 12px rgba(197, 115, 230, 0.5));
+}
+
+.certification-arrow {
+  background: rgba(197, 115, 230, 0.2);
+  border: 2px solid rgba(197, 115, 230, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.certification-arrow:hover {
+  background: rgba(197, 115, 230, 0.4);
+  border-color: rgba(197, 115, 230, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(197, 115, 230, 0.4);
+}
+
+.certification-arrow:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+  .certification-badge {
+    width: calc((100% - 120px) / 5);
+  }
+}
+
+@media (max-width: 992px) {
+  .certification-badge {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media (max-width: 767px) {
+  .certification-image {
+    height: 80px;
+  }
+  
+  .certifications-scroll-static {
+    gap: 20px;
+  }
+  
+  .certification-badge {
+    width: calc((100% - 60px) / 3);
+    min-width: 100px;
+  }
+  
+  .certification-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+  
+  .certifications-static-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .certification-badge {
+    width: calc((100% - 40px) / 2);
+  }
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
