@@ -4,9 +4,9 @@ import myImg from "../../Assets/Images/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { ImPointRight } from "react-icons/im";
 
 function Home2() {
   return (
@@ -18,32 +18,21 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              Hi Everyone, I am <span className="purple">Pablo Perez </span>
-              from <span className="purple"> Cádiz, Spain.</span>
+              Hi, I'm <span className="purple">Pablo Perez</span>, a Data Scientist & Engineer from <span className="purple"> Cádiz, Spain.</span>
               <br />
-              I am currently employed as a <span className="purple"> Data Scientist</span> at Deloitte.
               <br />
-              I hold a bachelor's degree in <span className="purple"> Aerospace Engineering</span> at the University of Seville and a master's degree * in
-               <span className="purple"> Data Science</span> at Universitat Oberta de Catalunya (UOC).
+              I work at <span className="purple"> Deloitte</span>, where I build data driven solutions to solve complex business challenges.
+              <br />
+              My background combines <span className="purple"> Aerospace Engineering</span> (University of Seville) with a
+               <span className="purple"> Master's degree in Data Science</span>* from the Universitat Oberta de Catalunya (UOC).
               <br />
               <span style={{ fontSize: "12px", fontStyle: "italic" }}>
                 * I still need to complete my final master's thesis.
               </span>
               <br />
               <br />
-              Apart from coding, some other activities that I love to do!
+              When I'm not coding, you'll usually find me lifting weights, scuba diving or watching anime.
             </p>
-            <ul>
-              <li className="about-activity">
-                <ImPointRight /> Lift weights
-              </li>
-              <li className="about-activity">
-                <ImPointRight /> Sea diving
-              </li>
-              <li className="about-activity">
-                <ImPointRight /> Watch anime
-              </li>
-            </ul>
             <i>
               <p style={{ color: "rgb(155 126 172)", fontSize: "19px" }}>
                 "Programming isn't about what you know; it's about what you can figure out!"{" "}
@@ -82,6 +71,14 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:pablo.perez.tech@gmail.com"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineMail />
                 </a>
               </li>
 

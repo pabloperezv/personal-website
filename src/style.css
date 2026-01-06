@@ -786,9 +786,10 @@ button:focus {
   transition: filter 0.3s ease;
 }
 
-.certification-image:hover {
-  filter: drop-shadow(0 6px 12px rgba(197, 115, 230, 0.5));
+.certification-image.larger {
+  height: 145px; /* 10% más grande (120px * 1.1) */
 }
+
 
 .certification-arrow {
   background: rgba(197, 115, 230, 0.2);

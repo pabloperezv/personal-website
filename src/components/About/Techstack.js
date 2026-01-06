@@ -13,42 +13,46 @@ import {
   SiScikitlearn,
   SiPostgresql,
   SiTableau,
-  SiPandas,
+  // SiPandas,
   SiAmazonec2,
   SiLinux,
   SiStreamlit,
+  SiDocker,
+  SiKubernetes,
+  SiAmazons3,
+  SiSelenium,
+  SiZyte,
  } from "react-icons/si";
  import { BsTypeH3 } from "react-icons/bs";
 import { FaAws } from "react-icons/fa";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 
-import { ReactComponent as CustomLogo } from "../../Assets/Logos/selenium-seeklogo.svg";
-import { ReactComponent as CustomLogo1 } from "../../Assets/Logos/scrapylogo.svg";
-import { ReactComponent as CustomLogo2 } from "../../Assets/Logos/zytelogo.svg";
-import { ReactComponent as CustomLogo3 } from "../../Assets/Logos/GurobiLogo.svg";
-import { ReactComponent as CustomLogo4 } from "../../Assets/Logos/amazon-s3-logo.svg";
-import { ReactComponent as CustomLogo5 } from "../../Assets/Logos/r-lang.svg";
+import { ReactComponent as CustomLogo1 } from "../../Assets/Logos/GurobiLogo.svg";
+import { ReactComponent as CustomLogo2 } from "../../Assets/Logos/r-lang.svg";
+import { ReactComponent as CustomLogo3 } from "../../Assets/Logos/Scrapy_logo.svg";
 
 const techStack = [
   { icon: <FaAws />, name: "AWS" },
-  { icon: <CustomLogo4 style={{ width: "90px", height: "90px" }}/>, name: "Amazon S3" },
+  { icon: <SiAmazons3 />, name: "Amazon S3" },
   { icon: <SiAmazonec2 />, name: "Amazon EC2" },
   { icon: <DiGit />, name: "Git" },
   { icon: <SiDbt />, name: "dbt" },
-  { icon: <SiScikitlearn />, name: "scikit-learn" },
-  { icon: <SiPandas />, name: "Pandas" },
+  { icon: <SiDocker />, name: "Docker" },
+  { icon: <SiKubernetes />, name: "Kubernetes" },
+  { icon: <SiScikitlearn />, name: "Scikit-learn" },
+  // { icon: <SiPandas />, name: "Pandas" },
   { icon: <SiStreamlit />, name: "Streamlit" },
   { icon: <BsTypeH3 />, name: "H3" },
   { icon: <SiLinux />, name: "Linux" },
-  { icon: <CustomLogo1 style={{ width: "90px", height: "90px" }}/>, name: "Scrapy" },
-  { icon: <CustomLogo style={{ width: "90px", height: "90px" }}/>, name: "Selenium" },
-  { icon: <CustomLogo2 style={{ width: "90px", height: "90px" }}/>, name: "Zyte" },
+  { icon: <CustomLogo3 style={{ width: "90px", height: "90px" }} />, name: "Scrapy" },
+  { icon: <SiSelenium />, name: "Selenium" },
+  { icon: <SiZyte />, name: "Zyte" },
   { icon: <TbApi />, name: "API" },
   { icon: <RiFileExcel2Fill />, name: "Excel" },
-  { icon: <CustomLogo5 style={{ width: "90px", height: "90px" }}/>, name: "R" },
+  { icon: <CustomLogo2 style={{ width: "90px", height: "90px" }}/>, name: "R" },
   { icon: <SiTableau />, name: "Tableau" },
-  { icon: <CustomLogo3 style={{ width: "90px", height: "90px" }}/>, name: "Gurobi" },
+  { icon: <CustomLogo1 style={{ width: "90px", height: "90px" }}/>, name: "Gurobi" },
   { icon: <SiPostgresql />, name: "PostgreSQL" },
   { icon: <DiHtml5 />, name: "HTML5" },
   { icon: <DiCss3 />, name: "CSS3" },

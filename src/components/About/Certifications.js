@@ -125,19 +125,22 @@ function Certifications() {
             ref={scrollRef}
             className="certifications-scroll-static"
           >
-            {duplicatedCertifications.map((cert, index) => (
-              <div 
-                key={index} 
-                className="certification-badge"
-              >
-                <img
-                  src={cert.image}
-                  alt={cert.name}
-                  className="certification-image"
-                  draggable={false}
-                />
-              </div>
-            ))}
+            {duplicatedCertifications.map((cert, index) => {
+              const isLargerSnow = cert.name.startsWith("Snowflake") && cert.name !== "Snowflake Core";
+              return (
+                <div 
+                  key={index} 
+                  className="certification-badge"
+                >
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className={`certification-image ${isLargerSnow ? 'larger' : ''}`}
+                    draggable={false}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
         
