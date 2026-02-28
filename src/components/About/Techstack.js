@@ -24,7 +24,10 @@ import {
   SiZyte,
  } from "react-icons/si";
  import { BsTypeH3 } from "react-icons/bs";
-import { FaAws } from "react-icons/fa";
+import { 
+  FaAws,
+  FaGoogle,
+ } from "react-icons/fa";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 
@@ -38,6 +41,8 @@ const techStack = [
   { icon: <SiAmazonec2 />, name: "Amazon EC2" },
   { icon: <DiGit />, name: "Git" },
   { icon: <SiDbt />, name: "dbt" },
+  { icon: <CustomLogo1 style={{ width: "90px", height: "90px" }}/>, name: "Gurobi" },
+  { icon: <FaGoogle />, name: "OR-Tools" },
   { icon: <SiDocker />, name: "Docker" },
   // { icon: <SiKubernetes />, name: "Kubernetes" },
   { icon: <SiScikitlearn />, name: "Scikit-learn" },
@@ -52,7 +57,6 @@ const techStack = [
   { icon: <RiFileExcel2Fill />, name: "Excel" },
   { icon: <CustomLogo2 style={{ width: "90px", height: "90px" }}/>, name: "R" },
   { icon: <SiTableau />, name: "Tableau" },
-  { icon: <CustomLogo1 style={{ width: "90px", height: "90px" }}/>, name: "Gurobi" },
   { icon: <SiPostgresql />, name: "PostgreSQL" },
   { icon: <DiHtml5 />, name: "HTML5" },
   { icon: <DiCss3 />, name: "CSS3" },
