@@ -18,7 +18,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              Hi, I'm <span className="purple">Pablo Perez</span>, a Data Scientist & Engineer from <span className="purple"> Cádiz, Spain.</span>
+              Hi, I'm <span className="purple">Pablo Perez</span>, a Data Engineer from <span className="purple"> Cádiz, Spain.</span>
               <br />
               <br />
               I work at <span className="purple"> Deloitte</span>, where I build data driven solutions to solve complex business challenges.

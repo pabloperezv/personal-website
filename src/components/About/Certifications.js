@@ -10,10 +10,12 @@ import snowDataEngineer from "../../Assets/Certifications/snow_dataengineer.png"
 import snowDataLake from "../../Assets/Certifications/snow_datalake.png";
 import snowDataScience from "../../Assets/Certifications/snow_datascience.png";
 import snowDataWarehouse from "../../Assets/Certifications/snow_datawarehouse.png";
+import snowAdvancedDataEngineer from "../../Assets/Certifications/snow_advanced_data_engineer.png";
 
 const certifications = [
   { image: awsSolutionsArchitect, name: "AWS Solutions Architect" },
   { image: dbtFundamentals, name: "dbt Fundamentals" },
+  { image: snowAdvancedDataEngineer, name: "Snowflake Advanced Data Engineer" },
   { image: snowCore, name: "Snowflake Core" },
   { image: snowCollaboration, name: "Snowflake Collaboration" },
   { image: snowDataApplications, name: "Snowflake Data Applications" },
